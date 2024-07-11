@@ -1,1 +1,1 @@
-# SuperNovas_IIT-Kanpur_Myntra_HakerRamp
+# SuperNovas_IIT-Kanpur_Myntra_HackerRamp
