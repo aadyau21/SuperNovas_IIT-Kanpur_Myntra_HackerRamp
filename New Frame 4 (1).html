@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Sequinned Side Silk Gown - Glamon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #fff;
+            padding: 20px 20px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+        }
+        .user-info {
+            font-size: 18px;
+            margin-left: 20px;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .product-card {
+            max-width: 1000px;
+            width: 100%;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product-card h2 {
+            margin: 10px 0;
+            color: #555;
+        }
+        .product-card h1 {
+            margin: 10px 0;
+            color: #333;
+        }
+        .product-card p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .form-group {
+            margin: 15px 0;
+            width: 100%;
+        }
+        .form-group select,
+        .form-group input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .btn-group a, .btn-group button {
+            width: 48%;
+            padding: 15px 20px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            background-color: #9c5edb;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn-group a {
+            background-color: #ccc;
+        }
+        .footer-btn {
+            background-color: #9c5edb;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            margin: 10px;
+        }
+        footer {
+            background-color: #d4bcec;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Screenshot 2024-07-11 000629.png" alt="Glamon" style="width: 100px;">
+        <div class="user-info">
+            <span>Nancy Ambani</span>
+        </div>
+        <div>
+            <a href="#"><img src="share.png" alt="Share" width="50"></a>
+            <a href="#"><img src="heart.png" alt="Wishlist" width="50"></a>
+            <a href="#"><img src="bag.png" alt="Cart" width="50"></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="product-card">
+            <img src="WhatsApp Image 2024-07-10 at 11.47.35 PM.jpeg" alt="Black Sequinned side slit gown">
+            <h2>Stylease Exclusive</h2>
+            <h1>Black Sequinned side slik gown</h1>
+            <p>Rent: Rs. 3,500.00</p>
+            <p>Refundable Deposit: Rs. 3,500.00</p>
+
+            <div class="form-group">
+                <label for="rental-duration">Rental Duration</label>
+                <select id="rental-duration">
+                    <option>4 Days</option>
+                    <option>8 Days</option>
+                    <option>12 Days</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="size">Size</label>
+                <select id="size">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="start-date">Start Date</label>
+                <input type="date" id="start-date">
+            </div>
+
+            <div class="btn-group">
+                <a href="#">Wishlist</a>
+                <button>Add to Bag</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Glamon Fashion Rentals. All rights reserved.</p>
+        <a href="Untitled-2 myntra.html" class="footer-btn">Home</a>
+        <button class="footer-btn" onclick="window.close()">Exit</button>
+    </footer>
+        <script>
+           // Redirect to Google Chrome new tab on exit
+           document.querySelector('.footer-btn[onclick="window.close()"]').addEventListener('click', function(event) {
+             event.preventDefault();
+             window.open('https://www.google.com/', '_blank');
+             window.close();
+            });
+        </script>
+
+</body>
+</html>

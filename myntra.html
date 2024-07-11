@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #ffffff;
+            color: rgb(236, 75, 196);
+            padding: 15px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+        .header-left img {
+            height: 30px;
+            margin-right: 10px;
+        }
+        .header-left .extra-icon {
+            height: 30px;
+            margin-right: 10px;
+        }
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
+        .header-right span {
+            font-size: 1.5em;
+            margin-left: 10px;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            margin: 20px 10px;
+            position: relative;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px 40px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .search-bar .search-icon {
+            position: absolute;
+            right: 80px;
+            cursor: pointer;
+        }
+        .search-bar .camera-icon {
+            position: absolute;
+            right: 50px;
+            cursor: pointer;
+        }
+        .search-bar .microphone-icon {
+            position: absolute;
+            right: 20px;
+            cursor: pointer;
+        }
+        .gender-selection {
+            display: flex;
+            justify-content: space-around; /* Align buttons evenly */
+            margin: 20px 0;
+            padding: 0 10%; /* Increase padding to fit width of the page */
+        }
+        .gender-selection button {
+            background-color: #9c5edb;
+            color: white;
+            border: none;
+            padding: 10px 250px;
+            margin: 0 10px;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: transform 0.2s;
+        }
+        .gender-selection button:hover {
+            transform: scale(1.2);
+        }
+        .content {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .content img {
+            width: 100%;
+        }
+        .content .button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            border: none;
+            padding: 15px 25px;
+            margin: 0 10px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        .moving-bar {
+            background-color: #004d00;
+            color: white;
+            padding: 10px 0;
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
+        .moving-text {
+            display: inline-block;
+            animation: move 10s linear infinite;
+        }
+        .text-container {
+            display: inline-block;
+        }
+        @keyframes move {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .static-bar {
+            background-color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .static-bar img {
+            height: 40px;
+            margin: 0 100px;
+            vertical-align: middle;
+        }
+        .additional-buttons {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+        }
+        .additional-buttons button {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+        }
+        .additional-buttons button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img src="Screenshot 2024-07-10 222354.png" alt="Extra Icon" class="extra-icon">
+            <img src="Become insider.png" alt="Glamon Logo">
+        </div>
+        <div class="header-right">
+            <span>🔔</span>
+            <span>❤️</span>
+            <span>🛒</span>
+            <span>👤</span>
+        </div>
+    </div>
+
+    <div class="search-bar">
+        <span class="search-icon">🔍</span> <!-- Search icon -->
+        <input type="text" placeholder="Search for brands and products">
+        <span class="camera-icon">📷</span> <!-- Camera icon -->
+        <span class="microphone-icon">🎤</span> <!-- Microphone icon -->
+    </div>
+    
+
+    <div class="gender-selection">
+        <button id="menButton">Men</button>
+        <button id="womenButton">Women</button>
+    </div>
+
+    <div class="additional-buttons" id="additionalButtons">
+        <button id="normalDressesButton">Normal Dresses</button>
+        <button id="designerDressesButton">Designer Dresses</button>
+    </div>
+
+    <div class="content">
+        <img src="WhatsApp Image 2024-07-10 at 21.24.58.jpeg" alt="Fashion Models">
+    </div>
+
+    <div class="moving-bar">
+        <div class="moving-text">
+            <div class="text-container">
+                Hottest & Latest Trends&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Weekly Drops&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Easy Returns&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+            </div>
+            <div class="text-container">
+                Hottest & Latest Trends&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Weekly Drops&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Easy Returns&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+
+            </div>
+        </div>
+    </div>
+
+    <div class="static-bar">
+        <img src="Myntra 2.png" alt="Logo 1">
+        <img src="minis.png" alt="Logo 2">
+        <img src="stores.png" alt="Logo 3">
+        <img src="trends.png" alt="Logo 4">
+        <img src="vanshika.png" alt="Logo 5">
+    </div>
+
+    <script>
+        document.getElementById('menButton').addEventListener('click', function() {
+            toggleAdditionalButtons();
+        });
+
+        document.getElementById('womenButton').addEventListener('click', function() {
+            toggleAdditionalButtons();
+        });
+
+        document.getElementById('normalDressesButton').addEventListener('click', function() {
+            window.location.href = 'normal-dresses.html'; // Link to normal dresses page
+        });
+
+        document.getElementById('designerDressesButton').addEventListener('click', function() {
+            window.location.href = 'Untitled-1.html'; // Link to designer dresses page
+        });
+
+        function toggleAdditionalButtons() {
+            var additionalButtons = document.getElementById('additionalButtons');
+            additionalButtons.style.display = (additionalButtons.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

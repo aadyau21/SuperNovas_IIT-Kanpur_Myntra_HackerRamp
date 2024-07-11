@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamon Women</title>
+    <style>
+        body {
+            font-family: 'Inter Regular', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e4d3f5;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #ccc;
+        }
+        .header img {
+            height: 40px;
+        }
+        .header .icons img {
+            height: 25px;
+            margin-left: 15px;
+        }
+        .navigation {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            background-color: #fff;
+        }
+        .navigation button {
+           margin: 0 10px;
+           padding: 10px 250px;
+           border: none;
+           background-color: #9c5edb;
+           border-radius: 20px;
+           font-size: 16px;
+           cursor: pointer;
+           color: #ffffff;  /* Add color property */
+        }
+        .categories {
+            display: flex;
+            justify-content: center;
+            background-color: #9c5edb;
+            padding: 10px 0;
+        }
+        .categories button {
+            display: flex;
+            align-items: center;
+            margin: 0 10px;
+            padding: 10px 100px;
+            border: 2px solid #000000;
+            background-color: #ffffff;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .products {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .product-row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #9c5edb;
+            border-radius: 8px;
+            margin: 10px;
+            width: 200px;
+            text-align: left;
+            padding: 10px;
+            position: relative;
+        }
+        .product-card img {
+           width: 100%;
+           height: 250px;  /* Set a fixed height */
+           object-fit: cover;  /* Ensure the image covers the area without distortion */
+           border-radius: 8px;
+        }
+        .product-card h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product-card p {
+            color: #666;
+            margin: 2px 0;
+            position: relative;
+        }
+        .heart-icon{
+            position: absolute;
+            top: 270px;
+            right: 20px;
+            cursor: pointer;
+        }
+        .heart-icon:before {
+           content: "\2661"; 
+           font-size: 20px
+        }
+        .heart-icon.clicked:before {
+            content: "\2764"
+            color: #666;
+        }
+        .eco-score {
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            background-color: green;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+        }.footer {
+           display: flex;
+           justify-content: center;
+           padding: 5px 20px;
+
+           background-color: #ffffff;
+           border-top: 1px solid #ccc;
+        }
+
+        .footer img {
+           width: 250px; /* Ensure image fits within footer */
+           height: 40px; /* Maintain aspect ratio */
+        }
+
+        /* Style anchor tag (a) */
+        .product-card a {
+            text-decoration: none; /* Remove underline */
+            color: inherit; /* Inherit text color */
+            display: block; /* Make it a block-level element to cover entire product card */
+        }
+        .product-card a:hover {
+            text-decoration: none; /* Remove underline on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="Screenshot 2024-07-10 222354.png" alt="Glamon Logo">
+        <img src="Screenshot 2024-07-11 175653.png" alt="Another Image">
+        <div class="icons">
+            <img src="141944.png" alt="Search Icon">
+            <img src="free-heart-icon-3510-thumb.png" alt="Heart Icon">
+            <img src="a52896d05eefff947a92e05346ef1ba2.jpg" alt="Cart Icon">
+        </div>
+    </div>
+    <div class="navigation">
+        <button>Leasing</button>
+        <button>New</button>
+    </div>
+    <div class="categories">
+        <button>Western</button>
+        <button>Ethnic</button>
+        <button>Dresses</button>
+        <button>Accessories</button>
+    </div>
+    <div class="products">
+        <div class="product-row">
+            <div class="product-card">
+                <a href="New Frame 4 (1).html">
+                    <div class="eco-score">ecoScore:2.8</div>
+                    <img src="Rectangle 36.png" alt="Dress 1">
+                    <h3>Nancy Ambani<span class="heart-icon"></span></h3>
+                    <p>Black Sleeveless Silk Gown</p>
+                    <p>Rent: INR 1200</p>
+                    <p>Original MRP: INR 15000</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <div class="eco-score">ecoScore:4.2</div>
+                <img src="Rectangle 27.png" alt="Dress 2">
+                <h3>Isha Kapoor<span class="heart-icon"></span></h3>
+                <p>Brown Gown</p>
+                <p>Rent: INR 1500</p>
+                <p>Original MRP: INR 20000</p>
+            </div>
+        </div>
+        <div class="product-row">
+            <div class="product-card">
+                <div class="eco-score">ecoScore:4.0</div>
+                <img src="Rectangle 29.png" alt="Dress 3">
+                <h3>Nancy Ambani<span class="heart-icon"></span></h3>
+                <p>Black Gown</p>
+                <p>Rent: INR 1200</p>
+                <p>Original MRP: INR 15000</p>
+            </div>
+            <div class="product-card">
+                <div class="eco-score">ecoScore:3.8</div>
+                <img src="Rectangle 31.png" alt="Dress 4">
+                <h3>Isha Kapoor<span class="heart-icon"></span></h3>
+                <p>Pink Dress</p>
+                <p>Rent: INR 1500</p>
+                <p>Original MRP: INR 20000</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="Screenshot 2024-07-11 180712.png" alt="Your Image">
+        <img src="Screenshot 2024-07-11 180756.png" alt="Your Image">
+    </div>
+    
+    </div>
+</body>
+</html>
